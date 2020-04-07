@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#173C14</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#a44968</color>
+    <color name="czerwonyslaby">#b94259</color>
+    <color name="zielonyslaby">#63a344</color>
+    <color name="szaryslaby">#8fab86</color>
+    <color name="szarymocniejszy">#738b66</color>
+    <color name="niebieskislaby">#536a89</color>
+</resources>

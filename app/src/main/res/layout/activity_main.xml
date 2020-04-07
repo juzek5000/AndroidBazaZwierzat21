@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/numerOborowy"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/idSztuki"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="156"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Nazwa sztuki"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/nazwaSztuki"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Kudłata stara"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/idSztuki"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Numer kolczyka"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idSztuki" />
+
+        <EditText
+            android:id="@+id/numerKolczykaSztuki"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#c2bfbf"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:singleLine="false"
+            android:text="PL005126239875"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="8dp"
+            android:text="Dni wyć"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/nazwaSztuki" />
+
+        <EditText
+            android:id="@+id/dniWycielenia"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#c2bfbf"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="569"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/numerKolczykaSztuki"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Co sie urodziło"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/nazwaSztuki" />
+
+        <EditText
+            android:id="@+id/coSieUrodzilo"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:background="#c2bfbf"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="XX+"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/dniWycielenia"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Ojciec cielaka"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numerKolczykaSztuki" />
+
+        <EditText
+            android:id="@+id/ojciecCielaka"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="#c2bfbf"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/dniWycielenia" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Grupa"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/nazwaSztuki" />
+
+        <EditText
+            android:id="@+id/grupa"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:background="#c2bfbf"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="K4"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/coSieUrodzilo"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Data zacielenia"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Wycieliła sie"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Data wycielenia"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Data zasu- szenia"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Data badania"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <CheckBox
+            android:id="@+id/doUbycia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Do ubycia"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/filtr2"
+            app:layout_constraintTop_toBottomOf="@+id/czym8" />
+
+        <Button
+            android:id="@+id/bnt_znajdzOborowy"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_green_light"
+            android:text="Znajdz ob."
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/wycielilaSie"
+            app:layout_constraintTop_toBottomOf="@+id/ojciecCielaka" />
+
+        <EditText
+            android:id="@+id/znajdzOborowyEdit"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:background="#c2bfbf"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:maxLength="3"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/bnt_znajdzOborowy"
+            app:layout_constraintTop_toBottomOf="@+id/ojciecCielaka" />
+
+        <Button
+            android:id="@+id/bnt_PierwszyWstecz"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="160dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_blue_dark"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Pierwszy/Wstecz"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bnt_Ubyte" />
+
+        <Button
+            android:id="@+id/bnt_DalejOstatni"
+            android:layout_width="160dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Ostatni/Dalej"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/bnt_PierwszyWstecz"
+            app:layout_constraintTop_toBottomOf="@+id/bnt_Ubyte" />
+
+        <Button
+            android:id="@+id/bnt_Szukaj"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="Szukaj"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/spinerGdzieSzukac"
+            app:layout_constraintTop_toBottomOf="@+id/bnt_PierwszyWstecz" />
+
+        <EditText
+            android:id="@+id/szukajEdit"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="3dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/bnt_Szukaj"
+            app:layout_constraintTop_toBottomOf="@+id/bnt_DalejOstatni" />
+
+        <Spinner
+            android:id="@+id/spinerGdzieSzukac"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:entries="@array/size_entries"
+            android:popupBackground="@android:color/holo_purple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bnt_PierwszyWstecz" />
+
+        <Button
+            android:id="@+id/bnt_KrowyG6G"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/szaryslaby"
+            android:text="G6G"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/dataZacielenia"
+            app:layout_constraintTop_toBottomOf="@+id/bnt_znajdzOborowy" />
+
+        <Button
+            android:id="@+id/bnt_Zasuszenia"
+            style="@android:style/MediaButton.Play"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/szaryslaby"
+            android:text="Zasuszenia"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/bnt_KrowyG6G"
+            app:layout_constraintTop_toBottomOf="@+id/znajdzOborowyEdit" />
+
+        <Button
+            android:id="@+id/bnt_Wszystko"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/szaryslaby"
+            android:text="AKTUALNE"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/dataWycielenia"
+            app:layout_constraintTop_toBottomOf="@+id/bnt_KrowyG6G" />
+
+        <Button
+            android:id="@+id/bnt_Wycielenia"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/szaryslaby"
+            android:text="Wycielenia"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/bnt_Wszystko"
+            app:layout_constraintTop_toBottomOf="@+id/bnt_Zasuszenia" />
+
+        <Button
+            android:id="@+id/bnt_Edytuj"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="9dp"
+            android:background="@android:color/darker_gray"
+            android:text="EDYTUJ"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinerGdzieSzukac" />
+
+        <Button
+            android:id="@+id/bnt_Wyciel"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:text="Wycielenie"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/bnt_Edytuj"
+            app:layout_constraintTop_toBottomOf="@+id/bnt_Szukaj" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="8dp"
+            android:text="Uwagi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bnt_Wyciel" />
+
+        <EditText
+            android:id="@+id/uwagi"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textMultiLine|textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <Button
+            android:id="@+id/wycielilaSie"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="wycielilaSie"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/ojciecCielaka" />
+
+        <Button
+            android:id="@+id/dataZacielenia"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/wycielilaSie" />
+
+        <Button
+            android:id="@+id/dataZasuszenia"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/dataWycielenia" />
+
+        <Button
+            android:id="@+id/dataBadania"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/dataZasuszenia" />
+
+        <Button
+            android:id="@+id/dataWycielenia"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/dataZacielenia" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Zacielenie 1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uwagi" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Zacielenie 2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Zacielenie 3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Zacielenie 4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Zacielenie 7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Zacielenie 5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Zacielenie 6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Zacielenie 8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <Button
+            android:id="@+id/Inseminacja8"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/Inseminacja7" />
+
+        <Button
+            android:id="@+id/Inseminacja1"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/uwagi" />
+
+        <Button
+            android:id="@+id/Inseminacja7"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/Inseminacja6" />
+
+        <Button
+            android:id="@+id/Inseminacja6"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/Inseminacja5" />
+
+        <Button
+            android:id="@+id/Inseminacja2"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/Inseminacja1" />
+
+        <Button
+            android:id="@+id/Inseminacja3"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/Inseminacja2" />
+
+        <Button
+            android:id="@+id/Inseminacja4"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/Inseminacja3" />
+
+        <Button
+            android:id="@+id/Inseminacja5"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/Inseminacja4" />
+
+        <EditText
+            android:id="@+id/czym7"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/Inseminacja7"
+            app:layout_constraintTop_toBottomOf="@+id/czym6" />
+
+        <EditText
+            android:id="@+id/czym8"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/Inseminacja8"
+            app:layout_constraintTop_toBottomOf="@+id/czym7" />
+
+        <EditText
+            android:id="@+id/czym1"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/Inseminacja1"
+            app:layout_constraintTop_toBottomOf="@+id/uwagi" />
+
+        <EditText
+            android:id="@+id/czym2"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/Inseminacja2"
+            app:layout_constraintTop_toBottomOf="@+id/czym1" />
+
+        <EditText
+            android:id="@+id/czym3"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/Inseminacja3"
+            app:layout_constraintTop_toBottomOf="@+id/czym2" />
+
+        <EditText
+            android:id="@+id/czym4"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/Inseminacja4"
+            app:layout_constraintTop_toBottomOf="@+id/czym3" />
+
+        <EditText
+            android:id="@+id/czym6"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/Inseminacja7"
+            app:layout_constraintTop_toBottomOf="@+id/czym5" />
+
+        <EditText
+            android:id="@+id/czym5"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/Inseminacja5"
+            app:layout_constraintTop_toBottomOf="@+id/czym4" />
+
+        <CheckBox
+            android:id="@+id/filtr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Filtr 1"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Inseminacja8" />
+
+        <CheckBox
+            android:id="@+id/filtr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Filtr 2"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/filtr1"
+            app:layout_constraintTop_toBottomOf="@+id/Inseminacja8" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="18dp"
+            android:text="Nr. kolczyka matki"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filtr1" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Nazwa ojca"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <EditText
+            android:id="@+id/numerKolczykaMatki"
+            android:layout_width="170dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/filtr2" />
+
+        <EditText
+            android:id="@+id/nazwaOjca"
+            android:layout_width="205dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/textView23"
+            app:layout_constraintTop_toBottomOf="@+id/nazwaMatki" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:text="Nazwa matki"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <EditText
+            android:id="@+id/nazwaMatki"
+            android:layout_width="205dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/textView24"
+            app:layout_constraintTop_toBottomOf="@+id/numerKolczykaMatki" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Płeć"
+            app:layout_constraintStart_toEndOf="@+id/numerKolczykaMatki"
+            app:layout_constraintTop_toBottomOf="@+id/filtr2" />
+
+        <EditText
+            android:id="@+id/plec"
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/nazwaMatki"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Rasa"
+            app:layout_constraintStart_toEndOf="@+id/nazwaMatki"
+            app:layout_constraintTop_toBottomOf="@+id/plec" />
+
+        <EditText
+            android:id="@+id/rasa"
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/nazwaOjca"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="14dp"
+            android:text="Poprzedni posiadacz"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nazwaOjca" />
+
+        <EditText
+            android:id="@+id/poprzedniPosiadacz"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:width="0dp"
+            android:background="@android:color/darker_gray"
+            android:ellipsize="end"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+            android:singleLine="false"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="8dp"
+            android:text="Miejsce przeznaczenia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poprzedniPosiadacz" />
+
+        <EditText
+            android:id="@+id/miejscePrzeznaczenia"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:width="0dp"
+            android:background="@android:color/darker_gray"
+            android:ellipsize="end"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+            android:singleLine="false"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Data urodzenia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/miejscePrzeznaczenia" />
+
+        <Button
+            android:id="@+id/dataUrodzenia"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:text=""
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/miejscePrzeznaczenia" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="Data przybycia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="Data ubycia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <Button
+            android:id="@+id/dataPrzybycia"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dataUrodzenia" />
+
+        <Button
+            android:id="@+id/dataUbycia"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dataPrzybycia" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="Przyczyna ubycia"
+            app:layout_constraintStart_toEndOf="@+id/dataUrodzenia"
+            app:layout_constraintTop_toBottomOf="@+id/miejscePrzeznaczenia" />
+
+        <TextView
+            android:id="@+id/text_Wiek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="100dp"
+            android:text="Wiek"
+            app:layout_constraintStart_toEndOf="@+id/dataUrodzenia"
+            app:layout_constraintTop_toBottomOf="@+id/miejscePrzeznaczenia" />
+
+        <EditText
+            android:id="@+id/przyczynaUbycia"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/dataPrzybycia"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+        <EditText
+            android:id="@+id/Wiek"
+            android:layout_width="60dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/dataPrzybycia"
+            app:layout_constraintTop_toBottomOf="@+id/przyczynaUbycia" />
+
+        <Button
+            android:id="@+id/bnt_Anuluj"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="7dp"
+            android:background="@android:color/darker_gray"
+            android:text="ANULUJ"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/bnt_Wyciel"
+            app:layout_constraintTop_toBottomOf="@+id/szukajEdit" />
+
+        <Button
+            android:id="@+id/bnt_Jalowki"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/szaryslaby"
+            android:text="Jałówki"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/bnt_Wycielone"
+            app:layout_constraintTop_toBottomOf="@+id/bnt_Wycielenia" />
+
+        <Button
+            android:id="@+id/bnt_Wycielone"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/szaryslaby"
+            android:text="Wycielone"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/dataZasuszenia"
+            app:layout_constraintTop_toBottomOf="@+id/bnt_Wszystko" />
+
+        <Button
+            android:id="@+id/bnt_Ubyte"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/szaryslaby"
+            android:text="ubyte"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/dataBadania"
+            app:layout_constraintTop_toBottomOf="@+id/bnt_Jalowki" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="76dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Os. dob. wydajność"
+            app:layout_constraintStart_toEndOf="@+id/ojciecCielaka"
+            app:layout_constraintTop_toBottomOf="@+id/coSieUrodzilo" />
+
+        <EditText
+            android:id="@+id/OstDobWydajnosc"
+            android:layout_width="50dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/ojciecCielaka"
+            app:layout_constraintTop_toBottomOf="@+id/grupa"
+            tools:textAlignment="center" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
